@@ -13,6 +13,8 @@
 		FB33F2912CB0694F0034E52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB33F28F2CB0694F0034E52E /* Main.storyboard */; };
 		FB33F2932CB069510034E52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB33F2922CB069510034E52E /* Assets.xcassets */; };
 		FB33F2962CB069510034E52E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB33F2942CB069510034E52E /* LaunchScreen.storyboard */; };
+		FB33F29E2CB06A620034E52E /* Vista1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB33F29D2CB06A620034E52E /* Vista1ViewController.swift */; };
+		FB33F2A02CB06A790034E52E /* Vista2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB33F29F2CB06A790034E52E /* Vista2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FB33F2922CB069510034E52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB33F2952CB069510034E52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB33F2972CB069510034E52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB33F29D2CB06A620034E52E /* Vista1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vista1ViewController.swift; sourceTree = "<group>"; };
+		FB33F29F2CB06A790034E52E /* Vista2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vista2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				FB33F2892CB0694F0034E52E /* AppDelegate.swift */,
 				FB33F28B2CB0694F0034E52E /* SceneDelegate.swift */,
 				FB33F28D2CB0694F0034E52E /* ViewController.swift */,
+				FB33F29D2CB06A620034E52E /* Vista1ViewController.swift */,
+				FB33F29F2CB06A790034E52E /* Vista2ViewController.swift */,
 				FB33F28F2CB0694F0034E52E /* Main.storyboard */,
 				FB33F2922CB069510034E52E /* Assets.xcassets */,
 				FB33F2942CB069510034E52E /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB33F2A02CB06A790034E52E /* Vista2ViewController.swift in Sources */,
+				FB33F29E2CB06A620034E52E /* Vista1ViewController.swift in Sources */,
 				FB33F28E2CB0694F0034E52E /* ViewController.swift in Sources */,
 				FB33F28A2CB0694F0034E52E /* AppDelegate.swift in Sources */,
 				FB33F28C2CB0694F0034E52E /* SceneDelegate.swift in Sources */,
