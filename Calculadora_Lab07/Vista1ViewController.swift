@@ -9,13 +9,21 @@ import UIKit
 
 class Vista1ViewController: UIViewController {
 
+    @IBOutlet weak var txtResultado: UITextField!
+    
+    var nro1: Double = 0
+    var nro2: Double = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func numerosPresentes(_ sender: Any) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
