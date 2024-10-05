@@ -167,6 +167,47 @@ class Vista1ViewController: UIViewController {
         }
     }
     
+    // Ejercicio #2
+    
+    // Detectar cambio de orientación
+    @objc func cambioDeOrientacion() {
+        if UIDevice.current.orientation.isLandscape {
+            // Cambiar a la calculadora avanzada (científica)
+            cambiarACalculadoraCientifica()
+        }
+    }
+
+    // Función para cambiar al segundo ViewController
+    func cambiarACalculadoraCientifica() {
+        if let tabBarController = self.tabBarController {
+            // Cambiamos al segundo ViewController del TabBar
+            tabBarController.selectedIndex = 1
+        }
+    }
+
+    // Función que se ejecuta cuando el ViewController es liberado de la memoria
+    deinit {
+        // Remover la notificación de cambio de orientación cuando el ViewController sea liberado
+        NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+
+    // Función para manejar la transición de la pantalla al cambiar la orientación
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        if UIDevice.current.orientation.isLandscape {
+            // Detectar si estamos en modo horizontal
+            if let tabBarVC = self.tabBarController {
+                tabBarVC.selectedIndex = 1  // Cambia a la Vista2ViewController (calculadora científica)
+            }
+        } else if UIDevice.current.orientation.isPortrait {
+            // Detectar si estamos en modo vertical (portrait)
+            if let tabBarVC = self.tabBarController {
+                tabBarVC.selectedIndex = 0  // Cambia de vuelta a la Vista1ViewController (calculadora normal)
+            }
+        }
+    }
+
     /*
     // MARK: - Navigation
 
